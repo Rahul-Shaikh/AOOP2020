@@ -32,6 +32,7 @@ abstract class Customer {
 		while (true) {
 			System.out.print("ENTER THE AMOUNT YOU WANNA PAY: ");
 			double temp = psc.nextDouble();
+			psc.nextLine();
 			if (currLoan - temp < 0) {
 				System.out.println("YOU ARE PAYING MORE THAN THE LOAN. PLEASE CORRECT.\n");
 			}
