@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+class Course {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+	}
+}
+
+class Instructor {
+	String name;
+	long phNo;
+	
+	Instructor(String name, long phNo) {
+		
+	}
+	
+	void setValues(String name, long phNo) {
+	}
+	
+	void showValues() {
+	}
+}
+
+class TextBook {
+	
+	String title, aname, pub;
+
+	TextBook(String title, String aname, String pub) {
+		this.title = new String(title);
+		this.aname = new String(aname);
+		this.pub = new String(pub);
+	}
+	
+	void setValues(String title, String aname, String pub) {
+		this.title = new String(title);
+		this.aname = new String(aname);
+		this.pub = new String(pub);
+	}
+	
+	void showValues() {
+		System.out.println("\n\n--------------------------------------------------------------");
+    	System.out.println("TITLE: " + title);
+    	System.out.println("AUTHOR NAME: " + aname);
+    	System.out.println("PUBLISHER: " + pub);
+    	System.out.println("--------------------------------------------------------------\n\n");
+	}
+}
