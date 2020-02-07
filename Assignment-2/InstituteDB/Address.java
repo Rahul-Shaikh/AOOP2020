@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Address {
-  int premisesNum;
+  String premisesNum;
   String stName;
   String city;
   int pin;
@@ -9,17 +9,45 @@ class Address {
   private static Scanner psc = new Scanner(System.in);
 
   Address() {
-    System.out.print("ENTER PREMISES NUMBER: ");
-    this.premisesNum = psc.nextInt();
-    psc.nextLine();
-		System.out.print("ENTER STREET NAME: ");
+    System.out.println("--------ENTER ADDRESS-------");
+    System.out.print("\tENTER PREMISES NUMBER: ");
+    this.premisesNum = psc.nextLine();
+		System.out.print("\tENTER STREET NAME: ");
     this.stName = psc.nextLine();
-		System.out.print("ENTER CITY NAME: ");
+		System.out.print("\tENTER CITY NAME: ");
     this.city = psc.nextLine();
-		System.out.print("ENTER STATE NAME: ");
+		System.out.print("\tENTER STATE NAME: ");
     this.state = psc.nextLine();
+    System.out.print("\tENTER PIN: "); 
+    this.pin = psc.nextInt();
+    psc.nextLine();
+  }
+
+  void changePNum() {
+    System.out.print("ENTER PREMISES NUMBER: ");
+    this.premisesNum = psc.nextLine();
+    psc.nextLine();
+  }
+
+  void changeStName() {
+    System.out.print("ENTER STREET NAME: ");
+    this.stName = psc.nextLine();
+  }
+
+  void changeCity() {
+    System.out.print("ENTER CITY NAME: ");
+    this.city = psc.nextLine();
+  }
+
+  void changeState() {
+    System.out.print("ENTER STATE NAME: ");
+    this.state = psc.nextLine();
+  }
+
+  void changePin() {
     System.out.print("ENTER PIN: "); 
     this.pin = psc.nextInt();
+    psc.nextLine();
   }
 
   @Override
