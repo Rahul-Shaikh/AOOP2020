@@ -26,7 +26,6 @@ class Address {
   void changePNum() {
     System.out.print("ENTER PREMISES NUMBER: ");
     this.premisesNum = psc.nextLine();
-    psc.nextLine();
   }
 
   void changeStName() {

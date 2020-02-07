@@ -11,17 +11,19 @@ abstract class Person {
   abstract void setValues();
 
   void changeAddress() {
-    System.out.println("ENTER 'PN' TO CHANGE PREMISES NUMBER");
-    System.out.println("ENTER 'ST' TO CHANGE STREET NAME");
-    System.out.println("ENTER 'CT' TO CHANGE CITY NAME");
-    System.out.println("ENTER 'STT' TO CHANGE STATE NAME");
-    System.out.println("ENTER 'PIN' TO CHANGE PIN NUMBER");
-    System.out.println("ENTER 'ALL' TO CHANGE EVERYTHING");
-    System.out.println("ENTER 'Q' TO QUIT");
+    do {
+      System.out.println("");
+      System.out.println("ENTER 'PN' TO CHANGE PREMISES NUMBER");
+      System.out.println("ENTER 'ST' TO CHANGE STREET NAME");
+      System.out.println("ENTER 'CT' TO CHANGE CITY NAME");
+      System.out.println("ENTER 'STT' TO CHANGE STATE NAME");
+      System.out.println("ENTER 'PIN' TO CHANGE PIN NUMBER");
+      System.out.println("ENTER 'ALL' TO CHANGE EVERYTHING");
+      System.out.println("ENTER 'Q' TO QUIT");
+  
+      System.out.println("\nENTER CHOICE: ");
+      String choice = psc.nextLine();
 
-    System.out.println("\nENTER CHOICE: ");
-    String choice = psc.nextLine();
-    while (true) {
       if (choice.equals("PN")) {
         add.changePNum();
       }
@@ -45,11 +47,12 @@ abstract class Person {
         add.changePin();
       }
       else if (choice.equals("Q")) {
+        System.out.println("\n\n");
         break;
       }
       else {
         System.out.println("INPUT ERROR.\n");
       }
-    }
+    } while(true);
   }
 }

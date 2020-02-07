@@ -7,5 +7,11 @@ class Main {
 		Student st = new Student();
 		st.setValues();
 		st.show();
+
+		// Faculty ft = new Faculty();
+		// ft.setValues();
+		// ft.show();
+
+		st.changeAddress();
 	}
 }
