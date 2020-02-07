@@ -13,5 +13,6 @@ class Main {
 		// ft.show();
 
 		st.changeAddress();
+		st.show();
 	}
 }

@@ -12,11 +12,11 @@ class Address {
     System.out.println("--------ENTER ADDRESS-------");
     System.out.print("\tENTER PREMISES NUMBER: ");
     this.premisesNum = psc.nextLine();
-		System.out.print("\tENTER STREET NAME: ");
+	System.out.print("\tENTER STREET NAME: ");
     this.stName = psc.nextLine();
-		System.out.print("\tENTER CITY NAME: ");
+	System.out.print("\tENTER CITY NAME: ");
     this.city = psc.nextLine();
-		System.out.print("\tENTER STATE NAME: ");
+	System.out.print("\tENTER STATE NAME: ");
     this.state = psc.nextLine();
     System.out.print("\tENTER PIN: "); 
     this.pin = psc.nextInt();

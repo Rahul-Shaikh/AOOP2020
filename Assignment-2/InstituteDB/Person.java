@@ -21,23 +21,28 @@ abstract class Person {
       System.out.println("ENTER 'ALL' TO CHANGE EVERYTHING");
       System.out.println("ENTER 'Q' TO QUIT");
   
-      System.out.println("\nENTER CHOICE: ");
+      System.out.print("\nENTER CHOICE: ");
       String choice = psc.nextLine();
 
       if (choice.equals("PN")) {
         add.changePNum();
+        break;
       }
       else if (choice.equals("ST")) {
         add.changeStName();
+        break;
       }
       else if (choice.equals("CT")) {
         add.changeCity();
+        break;
       }
       else if (choice.equals("STT")) {
         add.changeState();
+        break;
       }
       else if (choice.equals("PIN")) {
         add.changePin();
+        break;
       }
       else if (choice.equals("ALL")) {
         add.changePNum();
@@ -45,6 +50,7 @@ abstract class Person {
         add.changeCity();
         add.changeState();
         add.changePin();
+        break;
       }
       else if (choice.equals("Q")) {
         System.out.println("\n\n");
