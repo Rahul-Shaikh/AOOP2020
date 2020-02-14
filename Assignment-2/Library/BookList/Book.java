@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class Book {
 	private int numCopy = 0;
 	private int numAvail = 0;
-	private Set<String> ids = new HashSet<String>();
+	private Set<String> availIds = new HashSet<String>();
+	private Set<String> issuedIds = new HashSet<String>();
 	private static Set<String> allIds = new HashSet<String>();
 	String title;
 	private static Scanner psc = new Scanner(System.in);
@@ -33,7 +34,7 @@ public class Book {
 		else
 		{
 			allIds.add(id);
-			ids.add(id);
+			availIds.add(id);
 			System.out.println("\n\nBOOK ADDED\n\n");
 		}
 		numCopy++;
