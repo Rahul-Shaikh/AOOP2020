@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class Book {
 	private int numCopy = 0;
 	private int numAvail = 0;
-	private static Set<String> ids = new HashSet<String>();
+	private Set<String> ids = new HashSet<String>();
+	private static Set<String> allIds = new HashSet<String>();
 	String title;
 	private static Scanner psc = new Scanner(System.in);
 	
@@ -25,12 +26,13 @@ public class Book {
 		String id;
 		System.out.print("ENTER BOOKID: ");
 		id = psc.nextLine();
-		if (ids.contains(id))
+		if (allIds.contains(id))
 		{
 			System.out.println("\n\n[ERROR] THIS ID ALREADY EXISTS !!!!!!!!!!!!!!!!!!\n\n");
 		}
 		else
 		{
+			allIds.add(id);
 			ids.add(id);
 			System.out.println("\n\nBOOK ADDED\n\n");
 		}
